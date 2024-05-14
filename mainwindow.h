@@ -18,6 +18,9 @@ public:
 
     bool populateQuotesTable(QSqlDatabase &db);  // Function to populate the table
 
+public slots:
+    void onCellDoubleClicked(int row, int column);
+
 private:
     Ui::MainWindow *ui;
 };
